@@ -1,0 +1,151 @@
+\begin{thebibliography}{xx}
+
+\harvarditem[Berenson et~al.]{Berenson, Srinivasa \harvardand\
+  Kuffner}{2011}{Berenson15032011}
+Berenson, D., Srinivasa, S.~S. \harvardand\ Kuffner, J.  \harvardyearleft
+  2011\harvardyearright , `Task space regions: A framework for pose-constrained
+  manipulation planning', {\em The International Journal of Robotics Research}
+  .
+
+\harvarditem[Chestnutt et~al.]{Chestnutt, Lau, Cheung, Kuffner, Hodgins
+  \harvardand\ Kanade}{2005}{chestnutt2005footstep}
+Chestnutt, J., Lau, M., Cheung, G., Kuffner, J., Hodgins, J. \harvardand\
+  Kanade, T.  \harvardyearleft 2005\harvardyearright , {Footstep planning for
+  the Honda ASIMO humanoid}, {\em in} `Robotics and Automation, 2005. ICRA
+  2005. Proceedings of the 2005 IEEE International Conference on', IEEE,
+  pp.~629--634.
+
+\harvarditem[Dalibard et~al.]{Dalibard, Nakhaei, Lamiraux \harvardand\
+  Laumond}{2009}{dalibard09}
+Dalibard, S., Nakhaei, A., Lamiraux, F. \harvardand\ Laumond, J.-P.
+  \harvardyearleft 2009\harvardyearright , Whole-body task planning for a
+  humanoid robot: a way to integrate collision avoidance, {\em in} `Humanoid
+  Robots, 2009. Humanoids 2009. 9th IEEE-RAS International Conference on',
+  pp.~355 --360.
+
+\harvarditem[El~Khoury et~al.]{El~Khoury, Taix \harvardand\
+  Lamiraux}{2011}{el2011path}
+El~Khoury, A., Taix, M. \harvardand\ Lamiraux, F.  \harvardyearleft
+  2011\harvardyearright , `Path optimization for humanoid walk planning: an
+  efficient approach', {\em Int. Conf. Informatics in Control, Automation and
+  Robotics (ICINCO) 2011} .
+
+\harvarditem[Kajita et~al.]{Kajita, Kanehiro, Kaneko, Fujiwara, Harada, Yokoi
+  \harvardand\ Hirukawa}{2003}{kajita2003biped}
+Kajita, S., Kanehiro, F., Kaneko, K., Fujiwara, K., Harada, K., Yokoi, K.
+  \harvardand\ Hirukawa, H.  \harvardyearleft 2003\harvardyearright , {Biped
+  walking pattern generation by using preview control of zero-moment point},
+  {\em in} `IEEE International Conference on Robotics and Automation', Vol.~2,
+  Citeseer, pp.~1620--1626.
+
+\harvarditem[Kanehiro et~al.]{Kanehiro, Hirukawa, Kaneko, Kajita, Fujiwara,
+  Harada \harvardand\ Yokoi}{2004}{kanehiro2004locomotion}
+Kanehiro, F., Hirukawa, H., Kaneko, K., Kajita, S., Fujiwara, K., Harada, K.
+  \harvardand\ Yokoi, K.  \harvardyearleft 2004\harvardyearright , {Locomotion
+  planning of humanoid robots to pass through narrow spaces}, {\em in}
+  `Robotics and Automation, 2004. Proceedings. ICRA'04. 2004 IEEE International
+  Conference on', Vol.~1, IEEE, pp.~604--609.
+
+\harvarditem[Kanehiro et~al.]{Kanehiro, Lamiraux, Kanoun, Yoshida \harvardand\
+  Laumond}{2008}{kanehiro2008lca}
+Kanehiro, F., Lamiraux, F., Kanoun, O., Yoshida, E. \harvardand\ Laumond, J.
+  \harvardyearleft 2008\harvardyearright , {A Local Collision Avoidance Method
+  for Non-strictly Convex Polyhedra}, {\em in} `2008 Robotics: Science and
+  Systems Conference'.
+
+\harvarditem[Kanoun et~al.]{Kanoun, Laumond \harvardand\
+  Yoshida}{2010}{OussamaKanoun06102010}
+Kanoun, O., Laumond, J.-P. \harvardand\ Yoshida, E.  \harvardyearleft
+  2010\harvardyearright , `{Planning Foot Placements for a Humanoid Robot: A
+  Problem of Inverse Kinematics}', {\em The International Journal of Robotics
+  Research} .
+
+\harvarditem[Kavraki et~al.]{Kavraki, Svestka, Latombe \harvardand\
+  Overmars}{1996}{kavraki1996prp}
+Kavraki, L., Svestka, P., Latombe, J. \harvardand\ Overmars, M.
+  \harvardyearleft 1996\harvardyearright , `{Probabilistic roadmaps for path
+  planning in high-dimensional configuration spaces}', {\em Robotics and
+  Automation, IEEE Transactions on} {\bf 12}(4),~566--580.
+
+\harvarditem{Kuffner \harvardand\ {LaValle}}{2000}{kuffner00rrtconnect}
+Kuffner, J. \harvardand\ {LaValle}, S.  \harvardyearleft 2000\harvardyearright
+  , {RRT}-connect: An efficient approach to single-query path planning, {\em
+  in} `Proc. IEEE Int'l Conf. on Robotics and Automation (ICRA'2000), San
+  Francisco, CA'.
+\newline\harvardurl{citeseer.ist.psu.edu/article/kuffner00rrtconnect.html}
+
+\harvarditem[Kuffner et~al.]{Kuffner, Nishiwaki, Kagami, Inaba \harvardand\
+  Inoue}{2005}{kuffner2005motion}
+Kuffner, J., Nishiwaki, K., Kagami, S., Inaba, M. \harvardand\ Inoue, H.
+  \harvardyearleft 2005\harvardyearright , `Motion planning for humanoid
+  robots', {\em Robotics Research} pp.~365--374.
+
+\harvarditem{Laumond}{1998}{laumond1998robot}
+Laumond, J.  \harvardyearleft 1998\harvardyearright , {\em Robot motion
+  planning and control}, Springer.
+
+\harvarditem{Laumond}{2006}{laumond2006kcs}
+Laumond, J.  \harvardyearleft 2006\harvardyearright , `{Kineo CAM: a success
+  story of motion planning algorithms}', {\em Robotics \& Automation Magazine,
+  IEEE} {\bf 13}(2),~90--93.
+
+\harvarditem[Laumond et~al.]{Laumond, Jacobs, Taix \harvardand\
+  Murray}{1994}{taix-94}
+Laumond, J.-P., Jacobs, P., Taix, M. \harvardand\ Murray, R.  \harvardyearleft
+  1994\harvardyearright , `A motion planner for nonholonomic mobile robots',
+  {\em Robotics and Automation, IEEE Transactions on} {\bf 10}(5),~577 --593.
+
+\harvarditem{Nakamura \harvardand\ Hanafusa}{1986}{nakamura1986iks}
+Nakamura, Y. \harvardand\ Hanafusa, H.  \harvardyearleft 1986\harvardyearright
+  , `{Inverse kinematic solutions with singularity robustness for robot
+  manipulator control}', {\em ASME, Transactions, Journal of Dynamic Systems,
+  Measurement, and Control} {\bf 108},~163--171.
+
+\harvarditem[Perrin et~al.]{Perrin, Stasse, Lamiraux \harvardand\
+  Yoshida}{2011}{perrinbiped}
+Perrin, N., Stasse, O., Lamiraux, F. \harvardand\ Yoshida, E.  \harvardyearleft
+  2011\harvardyearright , `A biped walking pattern generator based on
+  “half-steps” for dimensionality reduction', {\em Robotics and Automation,
+  2011. Proceedings. ICRA'11. IEEE International Conference on} .
+
+\harvarditem[Pettr{\'e} et~al.]{Pettr{\'e}, Laumond \harvardand\
+  Sim{\'e}on}{2003}{pettre20032}
+Pettr{\'e}, J., Laumond, J. \harvardand\ Sim{\'e}on, T.  \harvardyearleft
+  2003\harvardyearright , {A 2-stages locomotion planner for digital actors},
+  {\em in} `Proceedings of the 2003 ACM SIGGRAPH/Eurographics symposium on
+  Computer animation', Eurographics Association, p.~264.
+
+\harvarditem[Shkolnik et~al.]{Shkolnik, Levashov, Manchester \harvardand\
+  Tedrake}{2011}{shkolnik2011bounding}
+Shkolnik, A., Levashov, M., Manchester, I. \harvardand\ Tedrake, R.
+  \harvardyearleft 2011\harvardyearright , `Bounding on rough terrain with the
+  littledog robot', {\em The International Journal of Robotics Research} {\bf
+  30}(2),~192.
+
+\harvarditem{Siciliano \harvardand\ Slotine}{1991}{siciliano1991gfm}
+Siciliano, B. \harvardand\ Slotine, J.  \harvardyearleft 1991\harvardyearright
+  , {A general framework for managing multiple tasks in highly redundant
+  robotic systems}, {\em in} `Advanced Robotics, 1991.'Robots in Unstructured
+  Environments', 91 ICAR., Fifth International Conference on', pp.~1211--1216.
+
+\harvarditem{Vukobratovic \harvardand\
+  Juricic}{1969}{vukobratovic1969contribution}
+Vukobratovic, M. \harvardand\ Juricic, D.  \harvardyearleft
+  1969\harvardyearright , `Contribution to the synthesis of biped gait', {\em
+  Biomedical Engineering, IEEE Transactions on} (1),~1--6.
+
+\harvarditem[Yoshida et~al.]{Yoshida, Belousov, Esteves \harvardand\
+  Laumond}{2005}{yoshida-humanoids05}
+Yoshida, E., Belousov, I., Esteves, C. \harvardand\ Laumond, J.-P.
+  \harvardyearleft 2005\harvardyearright , Humanoid motion planning for dynamic
+  tasks, {\em in} `Humanoid Robots, 2005 5th IEEE-RAS International Conference
+  on', pp.~1 --6.
+
+\harvarditem[Yoshida et~al.]{Yoshida, Kanoun, Esteves \harvardand\
+  Laumond}{2006}{yoshida2006tds}
+Yoshida, E., Kanoun, O., Esteves, C. \harvardand\ Laumond, J.  \harvardyearleft
+  2006\harvardyearright , {Task-driven support polygon reshaping for
+  humanoids}, {\em in} `Humanoid Robots, 2006 6th IEEE-RAS International
+  Conference on', pp.~208--213.
+
+\end{thebibliography}
