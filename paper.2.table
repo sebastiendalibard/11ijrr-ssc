@@ -1,6 +1,7 @@
 
-#Curve 0 of 1, 100 points
-#x y type
+# Curve 0 of 1, 100 points
+# Curve title: "0.2* sin(6*x)"
+# x y type
 5.00000 -0.19761  i
 5.06061 -0.17371  i
 5.12121 -0.12710  i
