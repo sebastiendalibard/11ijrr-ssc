@@ -221,10 +221,13 @@ footstep   level.   \cite{chestnutt2005footstep,kuffner2005motion}
 use   an  
 A$^{*}$   algorithm  to   find
 collision-free   footsteps.    In   \cite{perrinbiped},   the   authors   compute
-collision-free motions  for the legs by using  an RRT$^{*}$ algorithm.
+collision-free motions  for the legs by using  an RRT$^{*}$ algorithm. 
 
-
-Recent contributions to the field of locomotion planning  include algorithms 
+Some planning methods for free-climbing robots \cite{bretl2006motion}
+can be seen as a general way 
+to consider quasi-static multi-step planning, they are not directly applicable to
+humanoid dynamically stable locomotion.
+Other recent contributions to the field of locomotion planning  include algorithms 
 considering the dynamics at the planning phase \cite{shkolnik2011bounding}. This leads to 
 a growth of algorithmic complexity, particularly costly for high-dimensional
 systems such as humanoid robots. In our work, we show that it is not always
