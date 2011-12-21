@@ -225,7 +225,7 @@ collision-free motions  for the legs by using  an RRT$^{*}$ algorithm.
 
 Some planning methods for free-climbing robots \cite{bretl2006motion}
 can be seen as a general way 
-to consider quasi-static multi-step planning, they are not directly applicable to
+to consider quasi-static multi-step planning. They are not directly applicable to
 humanoid dynamically stable locomotion.
 Other recent contributions to the field of locomotion planning  include algorithms 
 considering the dynamics at the planning phase \cite{shkolnik2011bounding}. This leads to 
@@ -236,16 +236,16 @@ output of our algorithm is a dynamically stable walk motion.
 
 \subsection{Contribution}
 
-The main contribution of this work is a two-stage motion planner for a
-humanoid robot that computes a collision-free walking trajectory on the
-exact models of the robot and its environment. The first stage uses a
+The main contribution of this work is a two-stage humanoid robot motion planner
+that computes collision-free walking trajectories, based on
+exact models of both robot and environment. The first stage uses a
 sampling-based motion 
-planner to  compute a collision-free path  for a robot  sliding on the
+planner and  computes a collision-free path  for a robot  sliding on the
 ground. Another  contribution of this  paper is the formal  proof that
-this path can be  approximated by a dynamically stable, collision-free
-walking  trajectory. We have implemented this method and  used it on a
-model of  HRP-2 robot.  The results have been  validated on a real
-platform.
+this first path can be  approximated by a dynamically stable, collision-free
+walking  trajectory in a second stage. We have implemented this well-grounded 
+method and  used it on a model of  HRP-2 robot.  The results have been  
+validated on a real platform.
 
 
 
@@ -711,7 +711,7 @@ The motion planning algorithms presented in this paper have been implemented
 using KineoWorks\texttrademark \cite{laumond2006kcs}. The planning times have been measured
 on an Intel Core~2~Duo 2.13~GHz PC with 2~GB of RAM. Evaluation of the
 randomized algorithm has been conducted by executing 50 trials on each
-problem, we present the average results.
+of the first two problems. We present the average results of these trials.
 
 
 \subsection{Passing between two chairs}
@@ -742,7 +742,7 @@ Fig.   \ref{fig:sliding}    used   66.5~s  of  computation   time.
 Fig.  \ref{fig:chairs-waist} shows  the horizontal  trajectory  of the
 robot CoM  during  locomotion. The amplitude of the oscillations  decreases when passing
 between the  chairs.  This motion has  been validated on  a real HRP-2
-platform. 
+platform. Extension 1 shows a video of the experiment.
 
 \subsection{Cluttered environment}
 
@@ -772,7 +772,7 @@ environment neither bounding box nor footstep planning strategies
 could find a collision-free walk trajectory.
 The first planning stage required
 184.3~s on average, and the animation of the trajectory presented in 
-Fig. \ref{fig:cluttered} used 339.5~s of computation time. Fig. \ref{fig:cluttered-waist} 
+Fig.~\ref{fig:cluttered} used 339.5~s of computation time. Fig.~\ref{fig:cluttered-waist} 
 shows the robot waist trajectory during locomotion.
 
 \begin{figure}[h!]
@@ -785,38 +785,44 @@ shows the robot waist trajectory during locomotion.
 \end{figure}
 
 
-\subsection{Grasp Planning}
+\subsection{'Put the ball on a shelf'}
 
-The problem shown in Fig. \ref{fig:grasp} is defined as a grasping task. 
-The final configuration is defined implicitly by a desired hand
-position. We generated automatically goal configurations solving the
-task by following the method proposed in \cite{dalibard09}. Then, we applied our
-planner to generate a whole-body walk motion that solved the grasping
-task. Computation time for the first planning phase was on average
-83.0~s, and the animation of the trajectory presented on
-Fig. \ref{fig:grasp} used 90.1~s.  
-Fig. \ref{fig:grasping-waist} 
-shows the robot waist trajectory during locomotion.
+In the problem shown in Fig. \ref{fig:shelf} the robot has to put a ball on a
+shelf, in a constrained apartment environment. The final configuration is defined 
+implicitly as a desired hand position. We generated automatically goal configurations 
+solving the task by following the method proposed in \cite{dalibard09}. Then, we 
+applied our planner to generate a whole-body walk motion that solved the hand reaching
+task. 
+
+The solution sliding path is constrained between the table on the right and the lamp
+on the left. This passage is too narrow for the robot nominal walk parameters. 
+When executing the walk motion resulting from our algorithm, the robot left hand
+is only a few centimeters away from the lamp.
+
+Fig.~\ref{fig:shelf} shows the resulting walk motion and Fig.~\ref{fig:shelf-waist} 
+shows the robot waist trajectory during locomotion. Extension 2 presents a 
+comprehensive video of this problem, including the motion execution on
+the real robot HRP-2.
 
 
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.24\linewidth]{pics/apartment/trajectory-1.png}
-\includegraphics[width=0.24\linewidth]{pics/apartment/trajectory-2.png}
-\includegraphics[width=0.24\linewidth]{pics/apartment/trajectory-3.png}
-\includegraphics[width=0.24\linewidth]{pics/apartment/trajectory-4.png}
+\includegraphics[width=0.24\linewidth]{pics/shelves/trajectory-1.png}
+\includegraphics[width=0.24\linewidth]{pics/shelves/trajectory-2.png}
+\includegraphics[width=0.24\linewidth]{pics/shelves/trajectory-3.png}
+\includegraphics[width=0.24\linewidth]{pics/shelves/trajectory-4.png}
 \\ 
 \vskip 0.1cm
-\includegraphics[width=0.24\linewidth]{pics/apartment/trajectory-5.png}
-\includegraphics[width=0.24\linewidth]{pics/apartment/trajectory-6.png}
-\includegraphics[width=0.24\linewidth]{pics/apartment/trajectory-7.png}
-\includegraphics[width=0.24\linewidth]{pics/apartment/trajectory-8.png}
+\includegraphics[width=0.24\linewidth]{pics/shelves/trajectory-5.png}
+\includegraphics[width=0.24\linewidth]{pics/shelves/trajectory-6.png}
+\includegraphics[width=0.24\linewidth]{pics/shelves/trajectory-7.png}
+\includegraphics[width=0.24\linewidth]{pics/shelves/trajectory-8.png}
 
-\caption{Solution path for a grasp planning problem in an
+\caption{Solution path for a hand reaching problem in an
   appartment. The goal is implicitly defined as an inverse kinematics
   task.} 
-\label{fig:grasp}
+\label{fig:shelf}
 \end{figure}
 
 
@@ -825,18 +831,18 @@ shows the robot waist trajectory during locomotion.
 \begin{figure}[h!]
 \centering
 
-\includegraphics[width=0.9\linewidth]{pics/apartment/waist-trajectory.png}
+\includegraphics[width=0.5\linewidth]{pics/shelves/waist-trajectory.png}
 
 
 \caption{Horizontal trajectory of the robot waist during
     locomotion.}
-\label{fig:grasping-waist}
+\label{fig:shelf-waist}
 \end{figure}
 
 
 \section{Conclusion and perspectives}
 
-In this paper, we have presented a new planning strategy for humanoid whole-body
+In this paper, we have presented a well-grounded new strategy for humanoid whole-body
 motion planning including locomotion. The algorithm is based on a formal
 small-space controllability property of humanoid robots. 
 We have used our motion planner on different examples, and validated the
@@ -844,14 +850,18 @@ generated motions on a real robot.
 Our method has some limitations that should be addressed in future work:
 \begin{itemize}
 \item Because of the kinematic constraints we apply at the planning stage, we are not
-	able yet to plan motions where the robot steps over obstacles, while this is an 
-	important feature of humanoid robots.
+  able yet to plan motions where the robot steps over obstacles, while this is an 
+  important feature of humanoid robots.
 \item The fact that we use the simplified cart-table model forces us to keep the CoM
-	of the robot at a constant height. A more complete model could allow us to plan
-	other types of locomotions, for example to allow the robot to pass under 
-	obstacles. We will try to integrate the possibilities 
-        presented in \cite{kanehiro2004locomotion} and prove the small-space controllability
-        result for a more general walking humanoid robot model.
+  of the robot at a constant height. A more complete model could allow us to plan
+  other types of locomotions, for example to allow the robot to pass under 
+  obstacles. We will try to integrate the possibilities 
+  presented in \cite{kanehiro2004locomotion} and prove the small-space controllability
+  result for a more general walking humanoid robot model.
+\item The presented experiment setup assumes perfect knowledge of the environment 
+  as well as perfect execution of the plan. The latter can be critical in our case, since
+  non-nominal stepping may cause to drift away from the planned trajectory. Future 
+  experiments will  include trajectory following during plan execution.
 \end{itemize}
 
 \section{Acknowledgments}
